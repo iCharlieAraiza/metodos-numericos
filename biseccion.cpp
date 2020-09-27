@@ -3,8 +3,8 @@
 using namespace std;
 static double funcion(double x);
 int main() {
-  double xi = 1;
-  double xf = 1.6;
+  double xi = -1;
+  double xf = 3;
   double xr = 1;
 
   if (funcion(xi) * funcion(xf) > 0.0f)
@@ -32,5 +32,5 @@ int main() {
 
 static double funcion(double x)
 { 
-  return x * (4*x - 5);
+  return 1-((20*20)/(9.98)*(3*x+(x*x)/2))*(3+x);
 }
